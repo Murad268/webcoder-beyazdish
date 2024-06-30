@@ -1,0 +1,10 @@
+name: FaqController
+form: $/beyazdish/faq/models/faq/fields.yaml
+modelClass: Beyazdish\Faq\Models\FAQ
+defaultRedirect: beyazdish/faq/faqcontroller
+create:
+    redirect: 'beyazdish/faq/faqcontroller/update/:id'
+    redirectClose: beyazdish/faq/faqcontroller
+update:
+    redirect: beyazdish/faq/faqcontroller
+    redirectClose: beyazdish/faq/faqcontroller

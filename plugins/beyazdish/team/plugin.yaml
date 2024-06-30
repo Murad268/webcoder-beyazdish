@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.team::lang.plugin.name'
+    description: 'beyazdish.team::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Врачи
+        url: beyazdish/team/doctorscontroller
+        icon: icon-table

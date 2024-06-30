@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.faq::lang.plugin.name'
+    description: 'beyazdish.faq::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: FAQ
+        url: beyazdish/faq/faqcontroller
+        icon: icon-question-circle

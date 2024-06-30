@@ -1,0 +1,6 @@
+fields:
+    name:
+        label: Название
+        span: full
+        required: 1
+        type: text

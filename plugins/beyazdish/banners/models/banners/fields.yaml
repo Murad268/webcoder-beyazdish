@@ -1,0 +1,80 @@
+fields:
+    home:
+        label: 'Баннер на главной страницеi'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    services:
+        label: 'Баннер на странице услуг'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    team:
+        label: 'Баннер на странице врачей'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    faq:
+        label: 'Баннер на странице FAQ'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    about:
+        label: 'Баннер страницы «О нас»'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    contact:
+        label: 'Баннер на странице контактов'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    blogs:
+        label: 'Баннер страницы блогов'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    one_blog:
+        label: 'Изображение баннера конкретного блога'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

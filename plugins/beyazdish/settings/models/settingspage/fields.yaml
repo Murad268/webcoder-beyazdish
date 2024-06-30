@@ -1,0 +1,52 @@
+fields:
+    logo:
+        label: Лого
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    footer_logo:
+        label: 'Нижный лого'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    favicon:
+        label: Фавикон
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    video:
+        label: Видео
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    map:
+        label: Карта
+        size: large
+        span: full
+        required: 1
+        type: textarea
+    copyright_text:
+        label: 'Авторский текст'
+        span: full
+        required: 1
+        type: text

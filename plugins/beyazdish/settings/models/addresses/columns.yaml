@@ -1,0 +1,14 @@
+columns:
+    id:
+        label: id
+        type: number
+    title:
+        label: Адрес
+        type: text
+        searchable: true
+        sortable: true
+    on_contact_form:
+        label: 'Видна в контакной форме'
+        type: number
+        searchable: false
+        sortable: true

@@ -1,0 +1,10 @@
+fields:
+    title:
+        label: Адрес
+        span: full
+        required: 1
+        type: text
+    on_contact_form:
+        label: Видна в контакной форме
+        span: auto
+        type: checkbox

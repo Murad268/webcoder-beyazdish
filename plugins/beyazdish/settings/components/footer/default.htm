@@ -1,0 +1,98 @@
+  <footer id="footer" class="footer overlay-theme-colored5" data-tm-bg-img="images/footer-bg.png">
+      <div class="footer-widget-area roofting_footer_widgets">
+          <div class="container pt-100 pb-80">
+              <div class="row">
+                  <div class="col-md-6 col-lg-6 col-xl-3 pl-0 pl-lg-15">
+                      <div class="footer-logo">
+                          <div class="img">
+                              <img src="{{settings.footer_logo.path}}" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-xl-3">
+                      <div class="widget widget_nav_menu split-nav-menu">
+                          <h4 class="widget-title">{{'pages' | _}}</h4>
+                          <ul class="menu">
+                              <li><a href="about.html">{{'about' | _}}</a></li>
+                              <li><a href="doctors.html">{{'doctors' | _}}</a></li>
+                              <li><a href="blogs.html">{{'blogs' | _}}</a></li>
+                              <li><a href="faq.html">{{'faq' | _}}</a></li>
+                              <li><a href="blogs.html">{{'blogs' | _}}</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-xl-3">
+                      <div class="widget widget-blog-list clearfix mb-0 mt-lg-40">
+                          <h4 class="widget-title">{{'hours' | _}}</h4>
+                          <div class="tm-widget tm-widget-blog-list">
+                              <article class="post mb-20 clearfix">
+                                  <div class="post-date">
+                                    {% if hours.saturday == hours.every %}
+                                    <span class="entry-date">{{'everyDay.saturday' | _}} :</span>
+                                    <span class="entry-date">{{hours.every}}</span>
+                                    {% else %}
+                                      <div>
+                                        <span class="entry-date">{{'every' | _}} :</span>
+                                        <span class="entry-date">{{hours.every}}</span>
+                                      </div>
+                                         <div>
+                                             <span class="entry-date">{{'saturday' | _}} :</span>
+                                             <span class="entry-date">{{hours.saturday}}</span>
+                                         </div>
+                                    {% endif %}
+                                  </div>
+                              </article>
+                              <article class="post mb-20 clearfix">
+                                  <div class="post-date">
+                                      <span class="entry-date">{{'sunday' | _ }} :</span>
+                                      <span class="entry-date">{{hours.sunday}}</span>
+                                  </div>
+                              </article>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-xl-3">
+                      <div class="widget widget-contact clearfix mb-0 mt-lg-40">
+                          <h4 class="widget-title">{{'contacts' | _}}</h4>
+                          <div class="tm-widget tm-widget-contact">
+                              <ul class="contact-info">
+
+                                     {% for add in addressess %}
+                                     <li class="contact-address"><i
+                                             class="fas fa-map-marked-alt font-icon sm-display-block mr-10"></i>
+                                         {{add.title}}
+                                     </li>
+                                     {% endfor %}
+                                  {% for email in emailsF %}
+                                   <li class="contact-email"><i
+                                           class="fas fa-envelope font-icon sm-display-block mr-10"></i>
+                                        {{email.email}}
+                                   </li>
+                                  {% endfor %}
+                                  {% for number in numbersF %}
+                                      <li class="contact-phone">
+                                          <a href="tel:{{number.number}}">
+                                              <i class="fas fa-phone font-icon sm-display-block mr-10"></i>
+                                              Tel: {{number.number}}
+                                          </a>
+                                      </li>
+                                  {% endfor %}
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom" style="background-color: initial;">
+              <div class="container" data-tm-border-top="1px solid rgba(250,250,250,0.1)">
+                  <div class="row justify-content-center pt-30 pb-30">
+                      <div class="col-lg-8">
+                          <div class="footer-paragraph text-center">
+                              &copy; {{settings.copyright_text}}
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>

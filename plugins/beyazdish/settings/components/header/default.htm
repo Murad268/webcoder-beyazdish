@@ -1,0 +1,120 @@
+   <header id="header" class="header header-layout-type-header-1rows-floating-header header-bg-dark-shadow  ">
+       <div class="header-top sm-text-center style-bordered">
+           <div class="container">
+               <div class="row">
+                   <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start">
+                       <ul class="element contact-info">
+                           <li class="contact-phone"><i class="fa fa-phone font-icon sm-display-block"></i> {{'contact_with_us' | _}}: {% for number in numbers %}
+                               <a href="tel:{{number.number}}">{{number.number}}</a>
+                               {% endfor %}
+                           </li>
+                           <li class="contact-email"><i class="fa fa-envelope font-icon sm-display-block"></i>
+                               {% for email in emails %}
+                               <a href="mailto:{{email.email}}">{{email.email}}</a>
+                               {% endfor %}
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-end">
+                       <div class="element pt-0 pb-0">
+                           <ul class="styled-icons icon-dark icon-theme-colored1 icon-circled clearfix">
+                               <li><a href="{{socials.instagram_link}}" title="instagram" aria-label="instagram"
+                                       class="social-link" href="https://www.instagram.com/beyaz.dish/"><i
+                                           aria-hidden="true" class="fab fa-instagram"></i></a></li>
+                               <li><a href="{{socials.facebook_link}}" title="facebook" aria-label="facebook"
+                                       class="social-link" href="#"><i aria-hidden="true"
+                                           class="fab fa-facebook"></i></a></li>
+                               <li><a href="{{socials.twitter_link}}" title="twitter" aria-label="twitter"
+                                       class="social-link" href="#"><i aria-hidden="true"
+                                           class="fab fa-twitter"></i></a>
+                               </li>
+                               <li><a href="{{socials.youtube_link}}" title="youtube" aria-label="youtube"
+                                       class="social-link" href="#"><i aria-hidden="true"
+                                           class="fab fa-youtube"></i></a>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="header-nav tm-enable-navbar-hide-on-scroll">
+           <div class="header-nav-wrapper navbar-scrolltofixed">
+               <div class="menuzord-container header-nav-container">
+                   <div class="container position-relative">
+                       <div class="row header-nav-col-row">
+                           <div class="col-sm-auto align-self-center">
+                               <a title="Logo" aria-label="Logo" class="menuzord-brand site-brand"
+                                   href="{{'home' | page}}">
+                                   <img class="logo-default logo-1x" src="{{settings.logo.path}}" alt="Logo">
+                                   <img class="logo-default logo-2x retina" src="{{settings.logo.path}}" alt="Logo">
+                               </a>
+                           </div>
+                           <div class="col-sm-auto ms-auto pr-0 align-self-center">
+                               <nav id="top-primary-nav" class="menuzord theme-color2" data-effect="fade"
+                                   data-animation="none" data-align="right">
+                                   <ul id="main-nav" class="menuzord-menu">
+                                       <li class="menu-item">
+                                           <a title="{{'home' | _}}" aria-label="{{'home' | _}}"
+                                               href="{{'home' | page}}">{{'home' | _}}</a>
+                                       </li>
+                                       <li class="menu-item ">
+                                           <a title="{{'about' | _}}" aria-label="{{'about' | _}}"
+                                               href="{{'about' | page}}">{{'about' | _}}</a>
+                                           </li>
+                                       <li class="menu-item ">
+                                           <a href="{{'faq' | page}}">{{'faq' | _}}</a>
+                                       </li>
+                                       <li title="{{'services' | _}}" aria-label="{{'services' | _}}"
+                                           class="menu-item "><a
+                                               href="{{'services' | page}}">{{'services' | _}}</a>
+
+                                           <ul class="dropdown">
+                                            {% for service in services %}
+                                                 <li><a
+                                                    title="{{service.title}}"
+                                                    aria-label="{{service.title}}"
+                                                         href="{{'one_services' | page({slug: service.slug})}}">{{service.title}}</a>
+                                                 </li>
+                                            {% endfor %}
+                                           </ul>
+                                       </li>
+                                       <li title="{{'doctors' | _}}" aria-label="{{'doctors' | _}}" class="menu-item ">
+                                           <a
+                                               href="{{'doctors' | page}}">{{'doctors' | _}}</a>
+                                       </li>
+                                       <li class="menu-item ">
+                                           <a title="{{'blogs' | _}}" aria-label="{{'blogs' | _}}"
+                                               href="{{'blogs' | page}}">{{'blogs' | _}}</a>
+                                       </li>
+                                       <li class="menu-item ">
+                                           <a title="{{'contact' | _}}" aria-label="{{'contact' | _}}"
+                                               href="{{'contact' | page}}">{{'contact' | _}}</a>
+                                       </li>
+                                       <li class="menu-item"><a href="#">{{lang}}</a>
+                                           <ul class="dropdown">
+                                            {% for site in sitePicker.sites %}
+                                               <li><a href="{{ site.url  }}">{{ site.name }}</a></li>
+                                            {% endfor %}
+                                           </ul>
+                                       </li>
+                                   </ul>
+                               </nav>
+                           </div>
+                       </div>
+                       <div class="row header-nav-clone-col-row d-block d-xl-none">
+                           <div class="col-12">
+                               <nav id="top-primary-nav-clone"
+                                   class="menuzord d-block d-xl-none default menuzord-color-default menuzord-border-boxed menuzord-responsive"
+                                   data-effect="slide" data-animation="none" data-align="right">
+                                   <ul id="main-nav-clone"
+                                       class="menuzord-menu menuzord-right menuzord-indented scrollable">
+                                   </ul>
+                               </nav>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </header>

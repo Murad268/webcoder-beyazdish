@@ -1,0 +1,10 @@
+name: BlogsController
+form: $/beyazdish/blogs/models/blogs/fields.yaml
+modelClass: Beyazdish\Blogs\Models\Blogs
+defaultRedirect: beyazdish/blogs/blogscontroller
+create:
+    redirect: 'beyazdish/blogs/blogscontroller/update/:id'
+    redirectClose: beyazdish/blogs/blogscontroller
+update:
+    redirect: beyazdish/blogs/blogscontroller
+    redirectClose: beyazdish/blogs/blogscontroller

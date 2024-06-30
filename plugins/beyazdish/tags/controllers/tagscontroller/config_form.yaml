@@ -1,0 +1,10 @@
+name: TagsController
+form: $/beyazdish/tags/models/tags/fields.yaml
+modelClass: Beyazdish\Tags\Models\Tags
+defaultRedirect: beyazdish/tags/tagscontroller
+create:
+    redirect: 'beyazdish/tags/tagscontroller/update/:id'
+    redirectClose: beyazdish/tags/tagscontroller
+update:
+    redirect: beyazdish/tags/tagscontroller
+    redirectClose: beyazdish/tags/tagscontroller

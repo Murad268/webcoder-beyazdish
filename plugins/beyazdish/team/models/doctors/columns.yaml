@@ -1,0 +1,70 @@
+columns:
+    id:
+        label: id
+        type: number
+        sortable: true
+    name:
+        label: Имя
+        type: text
+        searchable: true
+        sortable: true
+    position:
+        label: Позиция
+        type: text
+        searchable: true
+        sortable: true
+    phones:
+        label: 'Телефонные номера'
+        type: text
+        searchable: true
+        sortable: true
+    facebook:
+        label: Facebook
+        type: text
+        searchable: true
+        sortable: true
+    twitter:
+        label: Twitter
+        type: text
+        searchable: true
+        sortable: true
+    skype:
+        label: Skype
+        type: text
+        searchable: true
+        sortable: true
+    instagram:
+        label: İnstagram
+        type: text
+        searchable: true
+        sortable: true
+    linkedin:
+        label: Linkedin
+        type: text
+        searchable: true
+        sortable: true
+    title:
+        label: Başlıq
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: Mətn
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Дата добавление'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Дата обновление'
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'Дата удаление'
+        type: datetime
+        searchable: true
+        sortable: true

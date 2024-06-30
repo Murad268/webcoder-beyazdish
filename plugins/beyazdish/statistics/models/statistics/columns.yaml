@@ -1,0 +1,15 @@
+columns:
+    id:
+        label: id
+        type: number
+        sortable: true
+    title:
+        label: Заголовок
+        type: text
+        searchable: true
+        sortable: true
+    count:
+        label: Число
+        type: text
+        searchable: true
+        sortable: true

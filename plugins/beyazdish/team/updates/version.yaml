@@ -1,0 +1,23 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table beyazdish_team_'
+    - builder_table_create_beyazdish_team_.php
+v1.0.3:
+    - 'Updated table beyazdish_team_'
+    - builder_table_update_beyazdish_team_.php
+v1.0.4:
+    - 'Updated table beyazdish_team_'
+    - builder_table_update_beyazdish_team_main.php
+v1.0.5:
+    - 'Updated table beyazdish_team_main'
+    - builder_table_update_beyazdish_team_main_2.php
+v1.0.6:
+    - 'Updated table beyazdish_team_main'
+    - builder_table_update_beyazdish_team_main_3.php
+v1.0.7:
+    - 'Updated table beyazdish_team_main'
+    - builder_table_update_beyazdish_team_main_4.php
+v1.0.8:
+    - 'Updated table beyazdish_team_main'
+    - builder_table_update_beyazdish_team_main_5.php

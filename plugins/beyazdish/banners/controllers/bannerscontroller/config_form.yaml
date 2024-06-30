@@ -1,0 +1,10 @@
+name: BannersController
+form: $/beyazdish/banners/models/banners/fields.yaml
+modelClass: Beyazdish\Banners\Models\Banners
+defaultRedirect: beyazdish/banners/bannerscontroller
+create:
+    redirect: 'beyazdish/banners/bannerscontroller/update/:id'
+    redirectClose: beyazdish/banners/bannerscontroller
+update:
+    redirect: beyazdish/banners/bannerscontroller
+    redirectClose: beyazdish/banners/bannerscontroller

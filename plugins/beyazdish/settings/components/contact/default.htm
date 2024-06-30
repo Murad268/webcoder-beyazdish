@@ -1,0 +1,154 @@
+     <div class="main-content-area">
+         <section class="page-title divider layer-overlay overlay-dark-8 section-typo-light"
+             data-tm-bg-img="{{contact_page_banner.path}}">
+             <div class="container pt-90 pb-90">
+                 <div class="section-content">
+                     <div class="row">
+                         <div class="col-md-12 text-center">
+                             <h2 class="title text-white">{{'contact' | _}}</h2>
+                             <nav role="navigation" class="breadcrumb-trail breadcrumbs">
+                                 <div class="breadcrumbs">
+                                     <span class="trail-item trail-begin"><a
+                                             href="{{'home' | page}}"><span>{{'home' | _}}</span></a></span>
+                                     <span><i class="fa fa-angle-right"></i></span>
+                                     <span class="trail-item trail-end active">{{'contact' | _}}</span>
+                                 </div>
+                             </nav>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section class="divider">
+             <div class="container pt-60 pb-60">
+                 <div class="section-content">
+                     <div class="row">
+                         <div class="col-sm-12 col-md-4">
+                             <div
+                                 class="icon-box text-center iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate mb-50">
+                                 <div class="icon-box-wrapper">
+                                     <div class="icon-wrapper mb-30">
+                                         <a class="icon icon-type-font-icon icon-dark icon-circled"> <i
+                                                 class="fa fa-phone" aria-hidden="true"></i>
+ </a>
+                                     </div>
+                                     <div class="icon-text">
+
+                                          <h5 class="icon-box-title mt-0">{{'phone' | _}}</h5>
+                                          {% for number in numbersC %}
+                                            <div class="content"><a href="tel:{{number.number}}">{{number.number}}</a>
+                                            </div>
+                                          {% endfor %}
+                                     </div>
+                                     <div class="clearfix"></div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-sm-12 col-md-4">
+                             <div
+                                 class="icon-box text-center iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate mb-50">
+                                 <div class="icon-box-wrapper">
+                                     <div class="icon-wrapper mb-30">
+                                         <a class="icon icon-type-font-icon icon-dark icon-circled"> <i aria-hidden="true"
+                                                 class="fa-solid fa-envelope"></i> </a>
+                                     </div>
+                                     <div class="icon-text">
+                                         <h5 class="icon-box-title mt-0">{{'email' | _}}</h5>
+                                          {% for email in emailsC %}
+                                            <div class="content"><a href="mailto:{{email.email}}">{{email.email}}</a>
+                                            </div>
+                                          {% endfor %}
+                                     </div>
+                                     <div class="clearfix"></div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-sm-12 col-md-4">
+                             <div
+                                 class="icon-box text-center iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate mb-50">
+                                 <div class="icon-box-wrapper">
+                                     <div class="icon-wrapper mb-30">
+                                         <a class="icon icon-type-font-icon icon-dark icon-circled"> <i
+                                                 class="fa fa-globe" aria-hidden="true"></i>
+ </a>
+                                     </div>
+                                     <div class="icon-text">
+                                         <h5 class="icon-box-title mt-0">{{'address' | _}}</h5>
+                                           {% for address in addressesC %}
+                                                <div class="content">{{address.title}}</div>
+                                           {% endfor %}
+                                     </div>
+                                     <div class="clearfix"></div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section class="divider bg-white-f7">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-7">
+                         <h2 class="mt-0 mb-0">Bizə yazın</h2>
+                         <form id="contact_form" name="contact_form" class="" action="https://www.beyazdis.az/contact"
+                             method="post">
+                             <input type="hidden" name="_token" value="RhcElKmgHEJ13v40WT558ewVkATsIYKiI0QGDGUM">
+                             <div class="row">
+                                 <div class="col-sm-6">
+                                     <div class="mb-3">
+                                         <label>Adınız <small>*</small></label>
+                                         <input name="name" class="form-control" type="text" value="" required
+                                             placeholder="Adınız">
+                                     </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                     <div class="mb-3">
+                                         <label>Email <small>*</small></label>
+                                         <input name="email" class="form-control" type="email" value="" required
+                                             placeholder="Mailiniz">
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-sm-6">
+                                     <div class="mb-3">
+                                         <label>Mövzu <small>*</small></label>
+                                         <input name="subject" class="form-control" type="text" value="" required
+                                             placeholder="Mövzu">
+                                     </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                     <div class="mb-3">
+                                         <label>Telefon</label>
+                                         <input name="phone" class="form-control" type="text" value=""
+                                             placeholder="Nömrə">
+                                     </div>
+                                 </div>
+                             </div>
+
+                             <div class="mb-3">
+                                 <label>İsmarıc</label>
+                                 <textarea name="message" class="form-control required" rows="5"
+                                     placeholder=".placeholder_message">
+
+                                </textarea>
+                             </div>
+                             <div class="mb-3">
+                                 <button type="submit"
+                                     class="btn btn-flat btn-theme-colored1 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">Göndər
+                                 </button>
+                             </div>
+                         </form>
+                     </div>
+                     <div class="col-lg-5">
+                         <iframe
+                             src="{{map}}"
+                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     </div>

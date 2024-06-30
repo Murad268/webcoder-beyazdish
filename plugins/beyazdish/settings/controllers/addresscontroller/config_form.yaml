@@ -1,0 +1,10 @@
+name: AddressController
+form: $/beyazdish/settings/models/addresses/fields.yaml
+modelClass: Beyazdish\Settings\Models\Addresses
+defaultRedirect: beyazdish/settings/addresscontroller
+create:
+    redirect: 'beyazdish/settings/addresscontroller/update/:id'
+    redirectClose: beyazdish/settings/addresscontroller
+update:
+    redirect: beyazdish/settings/addresscontroller
+    redirectClose: beyazdish/settings/addresscontroller

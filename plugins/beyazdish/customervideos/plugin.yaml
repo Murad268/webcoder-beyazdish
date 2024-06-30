@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.customervideos::lang.plugin.name'
+    description: 'beyazdish.customervideos::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Видео клиентов'
+        url: beyazdish/customervideos/customervideoscontroller
+        icon: icon-video-camera

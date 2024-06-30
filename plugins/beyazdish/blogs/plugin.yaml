@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.blogs::lang.plugin.name'
+    description: 'beyazdish.blogs::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Блоги
+        url: beyazdish/blogs/blogscontroller
+        icon: icon-text-height

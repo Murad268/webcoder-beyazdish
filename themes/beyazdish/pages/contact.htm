@@ -1,0 +1,13 @@
+url = "/contact"
+layout = "beyazdish"
+title = "Contact"
+
+[viewBag]
+localeTitle[az] = "Əlaqə"
+
+[contact]
+==
+{% put page_title %}
+    <title>{{this.page.title}}</title>
+{% endput %} 
+{% component 'contact' %}

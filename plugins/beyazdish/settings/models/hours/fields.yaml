@@ -1,0 +1,13 @@
+fields:
+    every:
+        label: 'Будни'
+        span: auto
+        type: text
+    saturday:
+        label: Суббота
+        span: auto
+        type: text
+    sunday:
+        label: Рынок
+        span: full
+        type: text

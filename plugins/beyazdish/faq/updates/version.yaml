@@ -1,0 +1,14 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table beyazdish_faq_'
+    - builder_table_create_beyazdish_faq_.php
+v1.0.3:
+    - 'Updated table beyazdish_faq_'
+    - builder_table_update_beyazdish_faq_main.php
+v1.0.4:
+    - 'Updated table beyazdish_faq_main'
+    - builder_table_update_beyazdish_faq_main_2.php
+v1.0.5:
+    - 'Updated table beyazdish_faq_main'
+    - builder_table_update_beyazdish_faq_main_3.php

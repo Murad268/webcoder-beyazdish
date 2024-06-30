@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.services::lang.plugin.name'
+    description: 'beyazdish.services::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Услуги
+        url: beyazdish/services/servicescontroller
+        icon: icon-briefcase

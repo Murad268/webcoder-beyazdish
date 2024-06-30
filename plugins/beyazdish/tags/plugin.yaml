@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.tags::lang.plugin.name'
+    description: 'beyazdish.tags::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Теги
+        url: beyazdish/tags/tagscontroller
+        icon: icon-tags

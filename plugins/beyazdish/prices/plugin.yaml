@@ -1,0 +1,6 @@
+plugin:
+    name: 'beyazdish.prices::lang.plugin.name'
+    description: 'beyazdish.prices::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''

@@ -1,0 +1,36 @@
+plugin:
+    name: 'beyazdish.settings::lang.plugin.name'
+    description: 'beyazdish.settings::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Информация
+        url: /
+        icon: icon-info-circle
+        sideMenu:
+            side-menu-item:
+                label: Параметры
+                url: beyazdish/settings/parameterscontroller/update/1
+                icon: icon-cogs
+            side-menu-item2:
+                label: 'Телефонные номера'
+                url: beyazdish/settings/phonenumberscontroller
+                icon: icon-phone
+            side-menu-item3:
+                label: 'Электронные почты'
+                url: beyazdish/settings/emailscontroller
+                icon: icon-envelope
+            side-menu-item4:
+                label: 'Социальные аккаунты'
+                url: beyazdish/settings/socialscontroller/update/1
+                icon: icon-street-view
+            side-menu-item5:
+                label: Адреса
+                url: beyazdish/settings/addresscontroller
+                icon: icon-map-marker
+            side-menu-item6:
+                label: 'Рабочее время'
+                url: beyazdish/settings/hourscontroller/update/1
+                icon: icon-clock-o

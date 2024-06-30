@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.statistics::lang.plugin.name'
+    description: 'beyazdish.statistics::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Статистика
+        url: beyazdish/statistics/statistictscontroller
+        icon: icon-cubes

@@ -1,0 +1,40 @@
+columns:
+    id:
+        label: id
+        type: number
+        sortable: true
+    instagram_link:
+        label: 'Instagram link'
+        type: text
+        searchable: true
+        sortable: true
+    facebook_link:
+        label: 'Facebook link'
+        type: text
+        searchable: true
+        sortable: true
+    youtube_link:
+        label: 'Youtube link'
+        type: text
+        searchable: true
+        sortable: true
+    twitter_link:
+        label: 'Twitter link'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Дата добавление'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Дата обновление'
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'Дата удаление'
+        type: datetime
+        searchable: true
+        sortable: true

@@ -1,0 +1,11 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table beyazdish_banners_'
+    - builder_table_create_beyazdish_banners_.php
+v1.0.3:
+    - 'Updated table beyazdish_banners_'
+    - builder_table_update_beyazdish_banners_.php
+v1.0.4:
+    - 'Updated table beyazdish_banners_'
+    - builder_table_update_beyazdish_banners_main.php

@@ -1,0 +1,6 @@
+plugin:
+    name: 'beyazdish.certificates::lang.plugin.name'
+    description: 'beyazdish.certificates::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''

@@ -1,0 +1,14 @@
+list: $/beyazdish/settings/models/phonenumbers/columns.yaml
+modelClass: Beyazdish\Settings\Models\PhoneNumbers
+title: PhoneNumbersController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'beyazdish/settings/phonenumberscontroller/update/:id'
+structure:
+    reorder: true

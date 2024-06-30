@@ -1,0 +1,14 @@
+.widget>ul>li>.dropdown {
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 20px;
+    transition: 0.6s ease-in-out;
+    height: 0;
+    overflow: hidden;
+}
+
+.widget>ul>li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}

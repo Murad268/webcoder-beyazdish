@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.about::lang.plugin.name'
+    description: 'beyazdish.about::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'О нас'
+        url: beyazdish/about/aboutcontroller/update/1
+        icon: icon-tablet

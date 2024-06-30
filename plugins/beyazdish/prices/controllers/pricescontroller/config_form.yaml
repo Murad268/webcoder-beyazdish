@@ -1,0 +1,10 @@
+name: PricesController
+form: $/beyazdish/prices/models/prices/fields.yaml
+modelClass: Beyazdish\Prices\Models\Prices
+defaultRedirect: beyazdish/prices/pricescontroller
+create:
+    redirect: 'beyazdish/prices/pricescontroller/update/:id'
+    redirectClose: beyazdish/prices/pricescontroller
+update:
+    redirect: beyazdish/prices/pricescontroller
+    redirectClose: beyazdish/prices/pricescontroller

@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.lnaguages::lang.plugin.name'
+    description: 'beyazdish.lnaguages::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Языки
+        url: /system/sites
+        icon: icon-language

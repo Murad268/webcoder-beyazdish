@@ -1,0 +1,35 @@
+fields:
+    image:
+        label: 'Изображение блога'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        required: 1
+        type: fileupload
+    title:
+        label: 'Название блога'
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    text:
+        label: 'Текст блога'
+        size: huge
+        span: full
+        required: 1
+        stretch: 0
+        type: richeditor
+        toolbarButtons: 'fullscreen | bold | italic | underline | strikeThrough | subscript | superscript | fontFamily | fontSize | color | emoticons | inlineStyle | paragraphStyle | paragraphFormat | align | formatOL | formatUL | outdent | indent | quote | insertHR | insertLink | insertPageLink | insertImage | insertVideo | insertAudio | insertFile | insertTable | insertSnippet | undo | redo | clearFormatting | selectAll'
+    status:
+        label: 'Виден на сайте'
+        span: auto
+        type: checkbox

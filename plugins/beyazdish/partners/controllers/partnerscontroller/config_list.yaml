@@ -1,0 +1,14 @@
+list: $/beyazdish/partners/models/partners/columns.yaml
+modelClass: Beyazdish\Partners\Models\Partners
+title: PartnersController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'beyazdish/partners/partnerscontroller/update/:id'
+structure:
+    reorder: true

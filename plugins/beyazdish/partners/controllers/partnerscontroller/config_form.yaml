@@ -1,0 +1,10 @@
+name: PartnersController
+form: $/beyazdish/partners/models/partners/fields.yaml
+modelClass: Beyazdish\Partners\Models\Partners
+defaultRedirect: beyazdish/partners/partnerscontroller
+create:
+    redirect: 'beyazdish/partners/partnerscontroller/update/:id'
+    redirectClose: beyazdish/partners/partnerscontroller
+update:
+    redirect: beyazdish/partners/partnerscontroller
+    redirectClose: beyazdish/partners/partnerscontroller

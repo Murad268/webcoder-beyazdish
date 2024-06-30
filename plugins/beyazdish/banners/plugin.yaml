@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.banners::lang.plugin.name'
+    description: 'beyazdish.banners::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Баннеры
+        url: beyazdish/banners/bannerscontroller/update/1
+        icon: icon-file-image-o

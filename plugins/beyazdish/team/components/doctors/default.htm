@@ -1,0 +1,66 @@
+  <div class="main-content-area">
+      <section class="page-title divider layer-overlay overlay-dark-8 section-typo-light"
+          data-tm-bg-img="{{doctors_page_banner.path}}">
+          <div class="container pt-90 pb-90">
+              <div class="section-content">
+                  <div class="row">
+                      <div class="col-md-12 text-center">
+                          <h2 class="title text-white">{{'doctors' | _}}</h2>
+                          <nav role="navigation" class="breadcrumb-trail breadcrumbs">
+                              <div class="breadcrumbs">
+                                  <span class="trail-item trail-begin"><a
+                                          href="{{'home' | page}}"><span>{{'home' | _}}</span></a></span>
+                                  <span><i class="fa fa-angle-right"></i></span>
+                                  <span class="trail-item trail-end active">{{'doctors' | _}}</span>
+                              </div>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="bg-white-f5">
+          <div class="container pb-70">
+              <div class="section-content">
+                  <div class="row">
+                      {% for doctor in doctors %}
+                      <div class="col-md-6 col-lg-6 col-xl-3">
+                          <div class="team-members border-bottom-theme-color-2px text-center maxwidth400 mb-30">
+                              <div class="team-thumb">
+                                    <img class="img-fullwidth" alt="" src="{{doctor.image.path}}">
+                                  <div class="team-overlay"></div>
+                              </div>
+                              <div class="team-details bg-white pt-20 pb-30">
+                                  <h3 class="mb-0"><a
+                                          href="{{'one_doctor' | page({slug: doctor.slug})}}">{{doctor.name}}</a></h3>
+                                  <h6 class="text-theme-colored1 mb-20">{{doctor.position}}</h6>
+                                  <ul class="styled-icons icon-dark icon-sm icon-theme-colored1 icon-circled clearfix">
+                                      <li><a title="facebook" aria-label="facebook" class="social-link"
+                                              href="{{doctor.facebook}}"><i aria-hidden="true"
+                                                  class="fab fa-facebook"></i></a>
+                                      </li>
+                                      <li><a title="instagram" aria-label="instagram" class="social-link"
+                                              href="{{doctor.instagram}}"><i aria-hidden="true"
+                                                  class="fab fa-instagram"></i></a>
+                                      </li>
+                                      <li><a title="twitter" aria-label="twitter" class="social-link"
+                                              href="{{doctor.twitter}}"><i aria-hidden="true"
+                                                  class="fab fa-twitter"></i></a>
+                                      </li>
+                                      <li><a title="skype" aria-label="skype" class="social-link"
+                                              href="{{doctor.skype}}"><i aria-hidden="true"
+                                                  class="fab fa-skype"></i></a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      {% endfor %}
+
+
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>

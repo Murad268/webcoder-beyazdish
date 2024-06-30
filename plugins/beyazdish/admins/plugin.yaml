@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.admins::lang.plugin.name'
+    description: 'beyazdish.admins::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Админы
+        url: backend/users
+        icon: icon-user-plus

@@ -1,0 +1,10 @@
+name: CustomerVideosController
+form: $/beyazdish/customervideos/models/customervideos/fields.yaml
+modelClass: Beyazdish\Customervideos\Models\CustomerVideos
+defaultRedirect: beyazdish/customervideos/customervideoscontroller
+create:
+    redirect: 'beyazdish/customervideos/customervideoscontroller/update/:id'
+    redirectClose: beyazdish/customervideos/customervideoscontroller
+update:
+    redirect: beyazdish/customervideos/customervideoscontroller
+    redirectClose: beyazdish/customervideos/customervideoscontroller

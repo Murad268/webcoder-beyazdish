@@ -1,0 +1,38 @@
+columns:
+    id:
+        label: id
+        type: number
+        sortable: true
+    image:
+        label: Rəsm
+        type: image
+    price:
+        label: Qiymət
+        type: text
+        searchable: true
+        sortable: true
+    title:
+        label: Başlıq
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: Mətn
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Əlavə edilmə tarixi'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Silinmə tarixi'
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'Silinmə tarixi'
+        type: datetime
+        searchable: true
+        sortable: true

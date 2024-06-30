@@ -1,0 +1,18 @@
+fields:
+    email:
+        label: 'Электронная почта'
+        span: full
+        required: 1
+        type: text
+    on_navbar:
+        label: 'Разместите его в шапке сайта'
+        span: auto
+        type: checkbox
+    on_footer:
+        label: 'Размещается внизу сайта'
+        span: auto
+        type: checkbox
+    on_contact_form:
+        label: 'Размещено в контактной форме'
+        span: auto
+        type: checkbox

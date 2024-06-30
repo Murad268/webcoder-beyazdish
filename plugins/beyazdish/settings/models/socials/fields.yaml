@@ -1,0 +1,17 @@
+fields:
+    instagram_link:
+        label: 'Instagram link'
+        span: auto
+        type: text
+    facebook_link:
+        label: 'Facebook link'
+        span: auto
+        type: text
+    youtube_link:
+        label: 'Youtube link'
+        span: auto
+        type: text
+    twitter_link:
+        label: 'Twitter link'
+        span: auto
+        type: text

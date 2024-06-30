@@ -1,0 +1,15 @@
+url = "/services"
+layout = "beyazdish"
+title = "Services"
+
+[services]
+
+[viewBag]
+localeUrl[Azərbaycan] = "/services"
+localeTitle[Azərbaycan] = "Xidmətlər"
+localeTitle[az] = "Xidmətlər"
+==
+{% put page_title %}
+    <title>{{this.page.title}}</title>
+{% endput %} 
+{% component 'services' %}

@@ -1,0 +1,10 @@
+url = "/faq"
+layout = "beyazdish"
+title = "FAQ"
+
+[faq]
+==
+{% put page_title %}
+    <title>{{this.page.title}}</title>
+{% endput %} 
+{% component 'faq' %}

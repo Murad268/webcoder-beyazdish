@@ -1,0 +1,17 @@
+fields:
+    question:
+        label: Вопрос
+        span: full
+        required: 1
+        type: text
+    answer:
+        label: Ответ
+        size: huge
+        span: full
+        required: 1
+        type: richeditor
+        toolbarButtons: fullscreen | bold | italic | underline | strikeThrough | subscript | superscript | fontFamily | fontSize | color | emoticons | inlineStyle | paragraphStyle | paragraphFormat | align | formatOL | formatUL | outdent | indent | quote | insertHR | insertLink | insertPageLink | insertImage | insertVideo | insertAudio | insertFile | insertTable | insertSnippet | undo | redo | clearFormatting | selectAll
+    status:
+        label: 'Видна на странице'
+        span: auto
+        type: checkbox

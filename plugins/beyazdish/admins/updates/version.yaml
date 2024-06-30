@@ -1,0 +1,5 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table beyazdish_admins_'
+    - builder_table_create_beyazdish_admins_.php

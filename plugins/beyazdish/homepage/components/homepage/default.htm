@@ -1,0 +1,265 @@
+<div class="main-content-area">
+    <section class="parallax layer-overlay overlay-white-1">
+        <div class="bg-video">
+            <div id="home-video" class="video">
+                <video style='object-fit:cover' autoplay muted loop width="100%" height="100%">
+                    <source src="{{settings.video.path}}" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="container pt-60">
+            <div class="section-content">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-6" style="height: 600px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container pb-0">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="text-uppercase text-theme-colored2 mt-sm-10">{{'about' | _}}</h2>
+                    <h2 class="mt-0">{{about.title}}</h2>
+                    <p class="lead">
+                        {{about.description | raw}}
+                </div>
+                <div class="col-lg-4">
+                    <div>
+                        <img src="{{about.image.path}}"
+                            alt="SAĞLAM VƏ ESTETİK DİŞLƏ HƏYATA GÜLÜMSƏYİN">
+                    </div>
+                    <h3 class="text-theme-colored mb-0">{{about.doctor_name}}</h3>
+                    <p>{{about.position}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="divider parallax layer-overlay overlay-theme-colored1-9"
+        data-tm-bg-img="storage/NXUqHioimKCGK62hnK1cXTwUMkfmMhJUU1yRF4nP.png">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <h2 class="text-uppercase text-white mt-0 line-height-1">{{'our_services' | _}}</h2>
+                        <div class="title-icon">
+                            <img class="mb-10" src="{{'assets/images/title-icon-white.png' | theme}}" alt="">
+                        </div>
+                        <p class="text-white">{{'we_work_for_you' | _}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    {% for service in services %}
+                    <div class="col-md-6 col-lg-3">
+                        <div
+                            class="tm-sc-icon-box icon-box text-center iconbox-centered-in-responsive iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate-y mb-30 p-20 pt-40 pb-40 bg-white-f9">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-wrapper">
+                                    <a class="icon icon-default icon-custom">
+                                        <img src="{{service.icon.path}}" alt="{{service.title}}">
+                                    </a>
+                                </div>
+                                <div class="icon-text">
+                                    <h3 class="icon-box-title">{{service.title}}</h3>
+                                </div>
+                                {% partial 'service_detail_btn' %}
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="divider parallax layer-overlay overlay-theme-colored1-9" data-tm-bg-img="{{home_page_banner.path}}">
+        <div class="container">
+            <div class="row section-typo-light">
+                {% for statistic in statistics %}
+                <div class="col-lg-3 col-md-6">
+                    <div class="tm-sc-funfact funfact text-center">
+                        <div class="funfact-icon mb-20">
+                            <img src="{{statistic.image.path}}" alt="{{statistic.title}}" width="50px">
+                        </div>
+                        <h2 class="counter"> <span class="animate-number" data-value="1240"
+                                data-animation-duration="1500">{{statistic.count}}</span><span
+                                class="counter-postfix">+</span>
+                        </h2>
+                        <h4 class="title">{{statistic.title}}</h4>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section id="doctors">
+        <div class="container">
+            <div class="section-title text-center  mb-40">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <h2 class=" mt-0 line-height-1">{{'our_doctors' | _}}</h2>
+                        <div class="title-icon">
+                            <img class="mb-10" src="{{'assets/images/title-icon.png' | theme}}" alt="">
+                        </div>
+                        <p>{{'our_doctors' | _}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mtli-row-clearfix">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme tm-owl-carousel-4col">
+                        {% for doctor in doctors %}
+                        <div class="item">
+                            <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                                <div class="team-thumb">
+                                    <a href="doctor/hekim-stomatoloq-cerrahimplantoloq.html">
+                                        <img class="img-fullwidth" alt="" src="{{doctor.image.path}}">
+                                    </a>
+                                    <div class="team-overlay"></div>
+                                </div>
+
+                                <div class="team-details bg-silver-light pt-20 pb-30">
+                                    <a href="{{'one_doctor' | page({slug: doctor.slug})}}">
+                                        <h3 class="mb-0">{{doctor.name}}</h3>
+                                    </a>
+                                    <h6 class="text-theme-colored1 mb-20">{{doctor.title}}
+                                    </h6>
+                                    <ul
+                                        class="styled-icons icon-dark icon-sm icon-theme-colored1 icon-circled clearfix">
+                                        <li><a title="facebook" aria-label="facebook" class="social-link"
+                                                href="{{doctor.facebook}}"><i aria-hidden="true"
+                                                    class="fab fa-facebook"></i></a>
+                                        </li>
+                                        <li><a title="instagram" aria-label="instagram" class="social-link"
+                                                href="{{doctor.instagram}}"><i aria-hidden="true"
+                                                    class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li><a title="twitter" aria-label="twitter" class="social-link"
+                                                href="{{doctor.twitter}}"><i aria-hidden="true"
+                                                    class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li><a title="skype" aria-label="skype" class="social-link"
+                                                href="{{doctor.skype}}"><i aria-hidden="true"
+                                                    class="fab fa-skype"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-silver-light">
+        <div class="container">
+            <div class="section-title text-center mb-40">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <h2 class="text-uppercase mt-0">{{'our_images' | _}}</h2>
+                        <p>{{'our_images_subtitle' | _}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="tm-sc-gallery tm-sc-gallery-grid gallery-style1-basic">
+                            <div class="isotope-layout-filter filter-style-3 text-center  cat-filter-theme-colored1"
+                                data-link-with="gallery-holder-743344">
+                                <a href="javascript:void(0)" class="active tags-filter"
+                                    data-filter="*">{{'all' | _}}</a>
+                                {% for tag in tags %}
+                                <a class="tags-filter" href="javascript:void(0)"
+                                    data-filter="{{tag.name}}">{{tag.name}}</a>
+                                {% endfor %}
+
+                            </div>
+                            <div id="gallery-holder-743344"
+                                class="isotope-layout grid-3 gutter-10 clearfix lightgallery-lightbox">
+                                <div class="isotope-layout-inner">
+                                    {% for image in images %}
+                                    <div class="isotope-item" data-filter="{{image.tags.name}}">
+                                        <div class="isotope-item-inner">
+                                            <div class="tm-gallery">
+                                                <div class="tm-gallery-inner">
+                                                    <div class="thumb">
+                                                        <img src="{{image.image.path}}" class=""
+                                                            alt="{{image.tags.name}}">
+                                                    </div>
+                                                    <div class="tm-gallery-content-wrapper">
+                                                        <div class="tm-gallery-content">
+                                                            <div class="tm-gallery-content-inner">
+                                                                <div class="icons-holder-inner">
+                                                                    <div
+                                                                        class="styled-icons icon-dark icon-circled icon-theme-colored1">
+                                                                        <a class="lightgallery-trigger styled-icons-item"
+                                                                            data-exthumbimage="{{image.image.path}}"
+                                                                            title="{{image.tags.name}}"
+                                                                            href="{{image.image.path}}"><i
+                                                                                class="fa fa-plus"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="title-holder">
+                                                                    <h5 class="title"><a
+                                                                            href="#">{{image.tags.name}}</a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   {% component 'blogs' %}
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tags_filter = document.querySelectorAll('.tags-filter');
+        const images = document.querySelectorAll('.isotope-item');
+
+        tags_filter.forEach(tag => {
+            tag.addEventListener("click", () => {
+                tags_filter.forEach(tag2 => tag2.classList.remove('active'))
+                tag.classList.add('active')
+                if (tag.getAttribute('data-filter') == "*") {
+                    images.forEach(image => image.style.display = "block")
+                } else {
+                    images.forEach(image => {
+                        if (image.getAttribute('data-filter') == tag.getAttribute(
+                                'data-filter')) {
+                            image.style.display = "block";
+                        } else {
+                            image.style.display = "none";
+                        }
+                    })
+                }
+
+            })
+
+        })
+    });
+
+</script>

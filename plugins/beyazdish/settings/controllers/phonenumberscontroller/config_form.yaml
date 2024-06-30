@@ -1,0 +1,10 @@
+name: PhoneNumbersController
+form: $/beyazdish/settings/models/phonenumbers/fields.yaml
+modelClass: Beyazdish\Settings\Models\PhoneNumbers
+defaultRedirect: beyazdish/settings/phonenumberscontroller
+create:
+    redirect: 'beyazdish/settings/phonenumberscontroller/update/:id'
+    redirectClose: beyazdish/settings/phonenumberscontroller
+update:
+    redirect: beyazdish/settings/phonenumberscontroller
+    redirectClose: beyazdish/settings/phonenumberscontroller

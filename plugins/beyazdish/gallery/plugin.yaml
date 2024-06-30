@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.gallery::lang.plugin.name'
+    description: 'beyazdish.gallery::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Галерея
+        url: beyazdish/gallery/gallerycontroller
+        icon: icon-image

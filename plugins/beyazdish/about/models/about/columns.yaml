@@ -1,0 +1,25 @@
+columns:
+    id:
+        label: id
+        type: number
+        sortable: true
+    doctor_name:
+        label: 'Имя врача'
+        type: text
+        searchable: true
+        sortable: true
+    position:
+        label: 'Специализация врача'
+        type: text
+        searchable: true
+        sortable: true
+    title:
+        label: Заголовок
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: Текст
+        type: text
+        searchable: true
+        sortable: true

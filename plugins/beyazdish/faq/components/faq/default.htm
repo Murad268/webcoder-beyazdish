@@ -1,0 +1,39 @@
+   <div class="main-content-area">
+       <section class="page-title divider layer-overlay overlay-dark-8 section-typo-light"
+           data-tm-bg-img="{{faq_page_banner.path}}">
+           <div class="container pt-90 pb-90">
+               <div class="section-content">
+                   <div class="row">
+                       <div class="col-md-12 text-center">
+                           <h2 class="title text-white">{{'faq' | _}}</h2>
+                           <nav role="navigation" class="breadcrumb-trail breadcrumbs">
+                               <div class="breadcrumbs">
+                                   <span class="trail-item trail-begin"><a
+                                           href="{{'home' | page}}"><span>{{'home' | _}}</span></a></span>
+                                   <span><i class="fa fa-angle-right"></i></span>
+                                   <span class="trail-item trail-end active">{{'faq' | _}}</span>
+                               </div>
+                           </nav>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <section>
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-10 col-md-push-1">
+                    {% for question in faqs %}
+                       <div id="section-one" class="mb-50">
+                           <h3>{{question.question}}</h3>
+                           <hr>
+                           <p class="mb-20">
+                               {{question.answer | raw}}
+                           </p>
+                       </div>
+                    {% endfor %}
+                   </div>
+               </div>
+           </div>
+       </section>
+   </div>

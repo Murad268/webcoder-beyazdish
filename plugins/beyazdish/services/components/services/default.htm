@@ -1,0 +1,43 @@
+<div class="main-content-area">
+    <section class="page-title divider layer-overlay overlay-dark-8 section-typo-light"
+        data-tm-bg-img="{{services_page_banner.path}}">
+        <div class="container pt-90 pb-90">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="title text-white">{{'services' | _}}</h2>
+                        <nav role="navigation" class="breadcrumb-trail breadcrumbs">
+                            <div class="breadcrumbs">
+                                <span class="trail-item trail-begin"><a
+                                        href="{{'home' | page}}"><span>{{'home' | _}}</span></a></span>
+                                <span><i class="fa fa-angle-right"></i></span>
+                                <span class="trail-item trail-end active">{{'services' | _}}</span>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="section-content">
+                <div class="row">
+                    {% for service in services %}
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="item">
+                            <div class="p-20 bg-white">
+                                <a href="bizim-xidmetler/terapiya.html">
+                                    <img src="{{service.main_image.path}}" alt="{{service.title}}">
+                                </a>
+                                <h3>{{service.title}}</h3>
+                                    {% partial 'service_detail_btn' %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

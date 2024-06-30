@@ -1,0 +1,40 @@
+columns:
+    id:
+        label: id
+        type: number
+        sortable: true
+    number:
+        label: Nömrə
+        type: text
+        searchable: true
+        sortable: true
+    on_navbar:
+        label: 'Saytın başlığında yerləşdirilib'
+        type: number
+        searchable: true
+        sortable: true
+    on_footer:
+        label: 'Saytın altlığında yerləşdirilib'
+        type: number
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Əlavə edilmə tarixi'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Yenilənmə tarixi'
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'Silinmə tarixi'
+        type: datetime
+        searchable: true
+        sortable: true
+    on_contact_form:
+        label: 'Kontakt formunda yerləşdirilib'
+        type: number
+        searchable: true
+        sortable: true

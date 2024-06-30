@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: id
+        type: number
+    every:
+        label: Будни
+        type: text
+    saturday:
+        label: Суббота
+        type: text
+    sunday:
+        label: Рынок
+        type: text

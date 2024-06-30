@@ -1,0 +1,10 @@
+name: StatistictsController
+form: $/beyazdish/statistics/models/statistics/fields.yaml
+modelClass: Beyazdish\Statistics\Models\Statistics
+defaultRedirect: beyazdish/statistics/statistictscontroller
+create:
+    redirect: 'beyazdish/statistics/statistictscontroller/update/:id'
+    redirectClose: beyazdish/statistics/statistictscontroller
+update:
+    redirect: beyazdish/statistics/statistictscontroller
+    redirectClose: beyazdish/statistics/statistictscontroller

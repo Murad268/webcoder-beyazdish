@@ -1,0 +1,10 @@
+name: ParametersController
+form: $/beyazdish/settings/models/settingspage/fields.yaml
+modelClass: Beyazdish\Settings\Models\SettingsPage
+defaultRedirect: beyazdish/settings/parameterscontroller
+create:
+    redirect: 'beyazdish/settings/parameterscontroller/update/:id'
+    redirectClose: beyazdish/settings/parameterscontroller
+update:
+    redirect: beyazdish/settings/parameterscontroller
+    redirectClose: beyazdish/settings/parameterscontroller

@@ -1,0 +1,10 @@
+name: CertificatesController
+form: $/beyazdish/certificates/models/certificates/fields.yaml
+modelClass: Beyazdish\Certificates\Models\Certificates
+defaultRedirect: beyazdish/certificates/certificatescontroller
+create:
+    redirect: 'beyazdish/certificates/certificatescontroller/update/:id'
+    redirectClose: beyazdish/certificates/certificatescontroller
+update:
+    redirect: beyazdish/certificates/certificatescontroller
+    redirectClose: beyazdish/certificates/certificatescontroller

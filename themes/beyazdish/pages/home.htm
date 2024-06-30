@@ -1,0 +1,16 @@
+url = "/"
+layout = "beyazdish"
+title = "Home page"
+
+[viewBag]
+localeTitle[Azərbaycan] = "Ana səhifə"
+localeTitle[az] = "Ana səhifə"
+
+[home]
+
+[blogs]
+==
+{% put page_title %}
+    <title>{{this.page.title}}</title>
+{% endput %} 
+{% component 'home' %}

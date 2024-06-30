@@ -1,0 +1,10 @@
+name: HoursController
+form: $/beyazdish/settings/models/hours/fields.yaml
+modelClass: Beyazdish\Settings\Models\Hours
+defaultRedirect: beyazdish/settings/hourscontroller
+create:
+    redirect: 'beyazdish/settings/hourscontroller/update/:id'
+    redirectClose: beyazdish/settings/hourscontroller
+update:
+    redirect: beyazdish/settings/hourscontroller
+    redirectClose: beyazdish/settings/hourscontroller

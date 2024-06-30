@@ -1,0 +1,39 @@
+columns:
+    id:
+        label: id
+        type: number
+        sortable: true
+    email:
+        label: 'Электронная почта'
+        type: text
+        searchable: true
+        sortable: true
+    on_navbar:
+        label: 'Размещается в шапке сайта.'
+        type: number
+        searchable: true
+        sortable: true
+    on_footer:
+        label: 'Размещается внизу сайта'
+        type: number
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Дата добавление'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Дата обновление'
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'Дата удаление'
+        type: datetime
+        searchable: tru
+    on_contact_form:
+        label: 'Размещено в контактной форме'
+        type: number
+        searchable: true
+        sortable: true

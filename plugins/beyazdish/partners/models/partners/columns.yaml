@@ -1,0 +1,29 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: false
+        sortable: true
+    image:
+        label: Rəsm
+        type: image
+    title:
+        label: Başlıq
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Əlavə edilmə tarixi'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Yenilənmə tarixi'
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'Silinmə tarixi'
+        type: datetime
+        searchable: true
+        sortable: true

@@ -1,0 +1,17 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table beyazdish_blogs_'
+    - builder_table_create_beyazdish_blogs_.php
+v1.0.3:
+    - 'Updated table beyazdish_blogs_'
+    - builder_table_update_beyazdish_blogs_main.php
+v1.0.4:
+    - 'Updated table beyazdish_blogs_main'
+    - builder_table_update_beyazdish_blogs_main_2.php
+v1.0.5:
+    - 'Updated table beyazdish_blogs_main'
+    - builder_table_update_beyazdish_blogs_main_3.php
+v1.0.6:
+    - 'Updated table beyazdish_blogs_main'
+    - builder_table_update_beyazdish_blogs_main_4.php

@@ -1,0 +1,76 @@
+<div class="main-content-area">
+    <section class="page-title divider layer-overlay overlay-dark-8 section-typo-light"
+        data-tm-bg-img="{{blogs_page_banner.path}}">
+        <div class="container pt-90 pb-90">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="title text-white">{{'blogs' | _}}</h2>
+                        <nav role="navigation" class="breadcrumb-trail breadcrumbs">
+                            <div class="breadcrumbs">
+                                <span class="trail-item trail-begin"><a
+                                        href="{{'home' | page}}"><span>{{'home' | _}}</span></a></span>
+                                <span><i class="fa fa-angle-right"></i></span>
+                                <span class="trail-item trail-end active">{{'blogs' | _}}</span>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                   {% for blog in blogs %}
+                  <div class="col-md-6 col-lg-6 col-xl-6">
+                       <article class="post clearfix maxwidth600 mb-30 wow fadeInRight" data-wow-delay=".2s">
+                           <div class="entry-header">
+                               <div class="post-thumb thumb">
+                                   <img src="{{blog.image.path}}" alt="{{blog.title}}"
+                                       class="img-responsive img-fullwidth">
+                               </div>
+                           </div>
+                           <div class="entry-content bg-silver-light p-30 pr-20">
+                               <div class="entry-meta mt-0 no-bg no-border">
+                                   <div class="event-content">
+                                       <h3 class="entry-title text-capitalize m-0"><a
+                                               href="blog/when-to-change-your-toothbrush.html">{{blog.title}}</a>
+                                       </h3>
+                                   </div>
+                               </div>
+                               <p class="mt-10">
+                                   {% set replacements = {'&nbsp;': ' ', '&lt;': '', '<br>': ' ', ":" : ': '} %}
+                                   {% set cleaned_description = blog.text | striptags('<br>') | replace(replacements) %}
+                                   {% set trimmed_description = cleaned_description | slice(0, 90) %}
+                                   {{ trimmed_description }}...
+                               </p>
+                               {% partial 'blog_detail_btn' %}
+                               <div class="clearfix"></div>
+                           </div>
+                       </article>
+                   </div>
+                   {% endfor %}
+
+            </div>
+
+
+
+            <h4>{{'customer_video' | _}}</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 40px"
+                class="customer_videos">
+                {% for video in videos %}
+                     <div style="border: 1px solid black; height: 500px" class="customer_video">
+                         <video src="{{video.video.path}}" controls
+                             style="width: 100%; height: 100%;"></video>
+                         <div>t{{video.title}}</div>
+                     </div>
+                {% endfor %}
+
+            </div>
+
+
+
+        </div>
+    </section>
+</div>

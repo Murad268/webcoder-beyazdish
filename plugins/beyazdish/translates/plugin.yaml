@@ -1,0 +1,11 @@
+plugin:
+    name: 'beyazdish.translates::lang.plugin.name'
+    description: 'beyazdish.translates::lang.plugin.description'
+    author: beyazdish
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Переводы
+        url: rainlab/translate/messages
+        icon: icon-language

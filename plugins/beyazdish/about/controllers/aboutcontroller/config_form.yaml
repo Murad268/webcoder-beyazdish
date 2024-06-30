@@ -1,0 +1,10 @@
+name: AboutController
+form: $/beyazdish/about/models/about/fields.yaml
+modelClass: Beyazdish\About\Models\About
+defaultRedirect: beyazdish/about/aboutcontroller
+create:
+    redirect: 'beyazdish/about/aboutcontroller/update/:id'
+    redirectClose: beyazdish/about/aboutcontroller
+update:
+    redirect: beyazdish/about/aboutcontroller
+    redirectClose: beyazdish/about/aboutcontroller

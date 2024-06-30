@@ -1,0 +1,10 @@
+name: GalleryController
+form: $/beyazdish/gallery/models/gallery/fields.yaml
+modelClass: Beyazdish\Gallery\Models\Gallery
+defaultRedirect: beyazdish/gallery/gallerycontroller
+create:
+    redirect: 'beyazdish/gallery/gallerycontroller/update/:id'
+    redirectClose: beyazdish/gallery/gallerycontroller
+update:
+    redirect: beyazdish/gallery/gallerycontroller
+    redirectClose: beyazdish/gallery/gallerycontroller

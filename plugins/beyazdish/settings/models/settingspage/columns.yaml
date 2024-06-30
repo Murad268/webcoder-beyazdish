@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    map:
+        label: Карта
+        type: text
+        searchable: true
+        sortable: true
+    copyright_text:
+        label: 'Авторский текст'
+        type: text
+        searchable: true
+        sortable: true

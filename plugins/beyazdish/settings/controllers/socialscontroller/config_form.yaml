@@ -1,0 +1,10 @@
+name: SocialsController
+form: $/beyazdish/settings/models/socials/fields.yaml
+modelClass: Beyazdish\Settings\Models\Socials
+defaultRedirect: beyazdish/settings/socialscontroller
+create:
+    redirect: 'beyazdish/settings/socialscontroller/update/:id'
+    redirectClose: beyazdish/settings/socialscontroller
+update:
+    redirect: beyazdish/settings/socialscontroller
+    redirectClose: beyazdish/settings/socialscontroller

@@ -1,0 +1,10 @@
+name: ServicesController
+form: $/beyazdish/services/models/services/fields.yaml
+modelClass: Beyazdish\Services\Models\Services
+defaultRedirect: beyazdish/services/servicescontroller
+create:
+    redirect: 'beyazdish/services/servicescontroller/update/:id'
+    redirectClose: beyazdish/services/servicescontroller
+update:
+    redirect: beyazdish/services/servicescontroller
+    redirectClose: beyazdish/services/servicescontroller

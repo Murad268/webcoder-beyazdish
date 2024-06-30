@@ -1,0 +1,10 @@
+name: EmailsController
+form: $/beyazdish/settings/models/emails/fields.yaml
+modelClass: Beyazdish\Settings\Models\Emails
+defaultRedirect: beyazdish/settings/emailscontroller
+create:
+    redirect: 'beyazdish/settings/emailscontroller/update/:id'
+    redirectClose: beyazdish/settings/emailscontroller
+update:
+    redirect: beyazdish/settings/emailscontroller
+    redirectClose: beyazdish/settings/emailscontroller

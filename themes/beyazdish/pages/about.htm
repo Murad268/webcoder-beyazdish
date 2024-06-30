@@ -1,0 +1,13 @@
+url = "/about"
+layout = "beyazdish"
+title = "About"
+
+[viewBag]
+localeTitle[az] = "Haqqımızda"
+
+[about]
+==
+{% put page_title %}
+    <title>{{this.page.title}}</title>
+{% endput %} 
+{% component 'about' %}

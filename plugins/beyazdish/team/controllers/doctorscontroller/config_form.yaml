@@ -1,0 +1,10 @@
+name: DoctorsController
+form: $/beyazdish/team/models/doctors/fields.yaml
+modelClass: Beyazdish\Team\Models\Doctors
+defaultRedirect: beyazdish/team/doctorscontroller
+create:
+    redirect: 'beyazdish/team/doctorscontroller/update/:id'
+    redirectClose: beyazdish/team/doctorscontroller
+update:
+    redirect: beyazdish/team/doctorscontroller
+    redirectClose: beyazdish/team/doctorscontroller

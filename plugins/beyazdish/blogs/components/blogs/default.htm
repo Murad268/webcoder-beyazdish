@@ -1,0 +1,49 @@
+ <section id="blog">
+     <div class="container pb-50">
+         <div class="section-title text-center mb-40">
+             <div class="row justify-content-md-center">
+                 <div class="col-md-8">
+                     <h2 class="text-uppercase mt-0">{{'news' | _}}</h2>
+                     <p>{{'news_subtitle' | _}}</p>
+                 </div>
+             </div>
+         </div>
+         <div class="row">
+             <div class="col-md-12">
+                 <div class="owl-carousel owl-theme tm-owl-carousel-3col owl-nav-top mb-sm-0" data-nav="true">
+                     {% for blog in blogs %}
+                     <div class="item">
+                         <article class="post clearfix maxwidth600 mb-30 wow fadeInRight" data-wow-delay=".2s">
+                             <div class="entry-header">
+                                 <div class="post-thumb thumb">
+                                     <img src="{{blog.image.path}}" alt="{{blog.title}}"
+                                         class="img-responsive img-fullwidth">
+                                 </div>
+                             </div>
+                             <div class="entry-content bg-silver-light p-30 pr-20">
+                                 <div class="entry-meta mt-0 no-bg no-border">
+                                     <div class="event-content">
+                                         <h3 class="entry-title text-capitalize m-0"><a
+                                                 href="blog/when-to-change-your-toothbrush.html">{{blog.title}}</a>
+                                         </h3>
+                                     </div>
+                                 </div>
+                                 <p class="mt-10">
+                                    {% set replacements = {'&nbsp;': ' ', '&lt;': '', '<br>': ' ', ":" : ': '} %}
+                                    {% set cleaned_description = blog.text | striptags('<br>') | replace(replacements) %}
+                                    {% set trimmed_description = cleaned_description | slice(0, 90) %}
+                                    {{ trimmed_description }}...
+                                 </p>
+                                 {% partial 'blog_detail_btn' %}
+                                 <div class="clearfix"></div>
+                             </div>
+                         </article>
+                     </div>
+                     {% endfor %}
+
+
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>

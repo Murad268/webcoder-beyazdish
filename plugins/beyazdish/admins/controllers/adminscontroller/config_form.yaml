@@ -1,0 +1,10 @@
+name: AdminsController
+form: $/beyazdish/admins/models/admins/fields.yaml
+modelClass: Beyazdish\Admins\Models\Admins
+defaultRedirect: beyazdish/admins/adminscontroller
+create:
+    redirect: 'beyazdish/admins/adminscontroller/update/:id'
+    redirectClose: beyazdish/admins/adminscontroller
+update:
+    redirect: beyazdish/admins/adminscontroller
+    redirectClose: beyazdish/admins/adminscontroller

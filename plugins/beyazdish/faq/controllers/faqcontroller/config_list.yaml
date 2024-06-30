@@ -1,0 +1,14 @@
+list: $/beyazdish/faq/models/faq/columns.yaml
+modelClass: Beyazdish\Faq\Models\FAQ
+title: FaqController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'beyazdish/faq/faqcontroller/update/:id'
+structure:
+    reorder: true

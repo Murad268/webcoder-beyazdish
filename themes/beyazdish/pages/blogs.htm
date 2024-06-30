@@ -1,0 +1,13 @@
+url = "/blogs"
+layout = "beyazdish"
+title = "Blogs"
+
+[viewBag]
+localeTitle[az] = "Bloqlar"
+
+[blogsPage]
+==
+{% put page_title %}
+    <title>{{this.page.title}}</title>
+{% endput %} 
+{% component 'blogsPage' %}
